@@ -8,3 +8,5 @@ print(v)
 r =v.reshape(3,5)
 print(r)
 
+##the number of axes (dimensions) of the array.
+print(v.ndim)
