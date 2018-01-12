@@ -29,8 +29,8 @@ print("Array creation")
 b = np.array([1.1,2.3,4.5])
 print(b.dtype)
 
-print("Array creation for two dimentional array")
-d = np.array([(1,2,3),(4,6,7)])
+print("Array creation for two dimentional array and minimum dimention 2")
+d = np.array([(1,2,3),(4,6,7)],ndmin=2)
 
 ## to create complex data , use dtype = complex
 c = np.array([(1,2,3),(4,6,7)], dtype=complex)
@@ -41,4 +41,9 @@ print(d)
 c = np.zeros((5,5))
 print(c)
 
+g = np.zeros((3,3), dtype = [('x', 'i4'), ('y', 'i4')])
+print("Custom type" ,g)
 
+##numpy.Empty-It creates an uninitialized array of specified shape and dtype.
+d = np.empty([4,3],dtype=int)
+print(d)
