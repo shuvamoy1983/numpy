@@ -1,6 +1,6 @@
 import numpy as np
 
-## to get a list of values
+## to get a list of values of values
 v = np.arange(25)
 print(v)
 
